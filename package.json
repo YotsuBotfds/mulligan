@@ -1,0 +1,25 @@
+{
+  "name": "zero-to-hero-survival-compendium",
+  "version": "1.0.0",
+  "description": "Complete offline survival & rebuilding knowledge library — 260+ guides, 700+ SVG diagrams, zero internet required.",
+  "author": "ZTH Team",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.js",
+    "build:css": "node scripts/minify-css.js",
+    "build:js": "node scripts/minify-js.js",
+    "build:validate": "node scripts/validate.js",
+    "build:cache": "bash build.sh",
+    "check-sizes": "node scripts/check-sizes.js",
+    "dev": "npx serve . -l 8000",
+    "new-guide": "node scripts/new-guide.js",
+    "test": "node tests/test-runner.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "terser": "^5.31.1"
+  }
+}
